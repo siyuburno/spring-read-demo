@@ -9,9 +9,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Aspect
-public class MyTestAop {
-    @Pointcut("execution(* proxy.aop.MyTestInterface.test(..))")
-    public void pt() {}
+public class MyTestClazzAop {
+    @Pointcut("execution(* proxy.aop.MyTestClazz.test(..))")
+    public void pt(){}
+
 
     @Before("pt()")
     public void before(JoinPoint jp) {
