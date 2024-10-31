@@ -8,6 +8,10 @@ target/
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
+.idea/encodings.xml
+.idea/vcs.xml
+.idea/misc.xml
+.idea/uiDesigner.xml
 *.iws
 *.iml
 *.ipr
@@ -36,3 +40,8 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### 动态代理生成文件 ###
+/com/
+/org/
+/proxy/
