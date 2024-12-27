@@ -9,7 +9,7 @@ public class BeanPostProcessorTest implements BeanPostProcessor {
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         if (bean instanceof BeanA) {
-            System.out.println("执行BeanPostProcessor的postProcessBeforeInitialization()");
+            System.out.println("初始化：执行BeanPostProcessor的postProcessBeforeInitialization()");
         }
         return bean;
     }
@@ -17,7 +17,7 @@ public class BeanPostProcessorTest implements BeanPostProcessor {
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         if (bean instanceof BeanA) {
-            System.out.println("执行BeanPostProcessor的postProcessAfterInitialization()");
+            System.out.println("初始化：执行BeanPostProcessor的postProcessAfterInitialization()");
         }
         return bean;
     }
