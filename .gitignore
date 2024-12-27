@@ -45,3 +45,4 @@ build/
 /com/
 /org/
 /proxy/
+/$java/
