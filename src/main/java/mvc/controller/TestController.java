@@ -1,4 +1,4 @@
-package mvc.contoller;
+package mvc.controller;
 
 import mvc.service.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
