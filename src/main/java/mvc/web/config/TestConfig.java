@@ -1,6 +1,6 @@
-package mvc.config;
+package mvc.web.config;
 
-import mvc.interceptor.TestInterceptor;
+import mvc.web.interceptor.TestInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

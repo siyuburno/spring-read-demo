@@ -1,4 +1,4 @@
-package ioc.container.demo.circulardependency;
+package ioc.container.circular_dependency;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

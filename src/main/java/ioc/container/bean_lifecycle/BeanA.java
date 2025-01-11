@@ -1,4 +1,4 @@
-package ioc.container.demo.beanlifecycle;
+package ioc.container.bean_lifecycle;
 
 import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.beans.factory.DisposableBean;

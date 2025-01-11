@@ -1,4 +1,4 @@
-package ioc.container.demo.beanlifecycle;
+package ioc.container.bean_lifecycle;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

@@ -1,4 +1,4 @@
-package ioc.container.demo;
+package ioc.container.start;
 
 import org.springframework.stereotype.Component;
 

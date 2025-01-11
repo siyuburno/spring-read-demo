@@ -1,4 +1,4 @@
-package ioc.container.demo;
+package ioc.container.start;
 
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -11,17 +11,15 @@ public class AppStarter {
     }
 
     public static void startWithAC(){
-        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext("ioc.container.demo");
+        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext("ioc.container.start");
         MyTestBean myTestBean = applicationContext.getBean(MyTestBean.class);
         myTestBean.print();
-
-        applicationContext.publishEvent(new MyTestEvent("source","test_event"));
     }
 
     public static void startWithBF() {
         DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
         ClassPathBeanDefinitionScanner scanner = new ClassPathBeanDefinitionScanner(beanFactory);
-        scanner.scan("ioc.container.demo");
+        scanner.scan("ioc.container.start");
 
         MyTestBean myTestBean = beanFactory.getBean(MyTestBean.class);
         myTestBean.print();

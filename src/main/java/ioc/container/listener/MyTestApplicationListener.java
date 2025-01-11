@@ -1,4 +1,4 @@
-package ioc.container.demo;
+package ioc.container.listener;
 
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
