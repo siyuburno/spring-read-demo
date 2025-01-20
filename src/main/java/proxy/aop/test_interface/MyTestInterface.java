@@ -1,4 +1,4 @@
-package proxy.aop;
+package proxy.aop.test_interface;
 
 public interface MyTestInterface {
     void test();

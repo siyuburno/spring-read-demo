@@ -1,4 +1,4 @@
-package proxy.aop;
+package proxy.aop.test_interface;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
@@ -7,10 +7,10 @@ import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
-@Component
 @Aspect
-public class MyTestInterfaceAop {
-    @Pointcut("execution(* proxy.aop.MyTestInterface.test(..))")
+@Component
+public class MyTestInterfaceAop1 {
+    @Pointcut("execution(* proxy.aop.test_interface.MyTestInterface.fun1(..))")
     public void pt() {}
 
     @Before("pt()")

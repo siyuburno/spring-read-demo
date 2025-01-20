@@ -1,4 +1,4 @@
-package proxy.aop;
+package proxy.aop.test_interface;
 
 import org.springframework.stereotype.Component;
 

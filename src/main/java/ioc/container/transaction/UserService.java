@@ -13,7 +13,7 @@ public class UserService {
     @Transactional
     public Boolean addUsers(User user1, User user2) {
         userDao.insertUser(user1);
-        // int i = 1 / 0;
+        int i = 1 / 0;
         userDao.insertUser(user2);
         return true;
     }
